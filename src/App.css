@@ -1,38 +1,42 @@
 .App {
-  text-align: center;
+  font-family: sans-serif;
+  margin: 0 15px;
+  /*text-align: center;*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.root {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.6fr 3fr;
+  grid-template-rows: 0.3fr 3.5fr;
+  grid-template-areas: "sidebar header" "sidebar mainpane";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+  grid-area: header;
+  border: 1px solid grey;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  grid-area: sidebar;
+  border: 1px solid grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainpane {
+  grid-area: mainpane;
+  border: 1px solid grey;
+}
+
+#attractionlist {
+  grid-area: alist;
+  margin: 0 20px;
+}
+
+#itinerarylist {
+  grid-area: ilist;
+  margin: 0 20px;
 }
