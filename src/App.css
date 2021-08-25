@@ -6,6 +6,33 @@
 
 h1 {
   font-weight: bold;
+  font-size: 20px;
+}
+
+table {
+  margin: 60px 0;
+}
+
+thead {
+  margin-left: 650px;
+}
+
+tbody tr {
+  margin-left: 650px;
+}
+
+th{
+  font-weight: normal;
+  font-size: 16px;
+  padding-right: 150px;
+  color: grey;
+}
+
+td{
+  font-weight: normal;
+  font-size: 16px;
+  padding-right: 150px;
+  color: grey;
 }
 
 .root {
