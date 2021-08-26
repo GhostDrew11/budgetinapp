@@ -90,7 +90,7 @@ function Categories() {
     const classes = useStyles();
     return (
         <div class="container">
-            <h1 className={classes.header}>Container</h1>
+            <h1 className={classes.header}>Categories</h1>
             <div class="row mt-5">
                 <div class="col d-flex justify-content-center">
                     <BudgetCard/>
