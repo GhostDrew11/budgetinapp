@@ -41,10 +41,10 @@ function AccountCard() {
             </Card>
           </div>
           <div className={classes.labels} >
-            <div /*className={classes.labels}*/>
+            <div>
                 Balance 
             </div>
-            <div /*className={classes.labels}*/>
+            <div>
                 $1300 
             </div>
           </div>

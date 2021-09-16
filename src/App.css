@@ -4,9 +4,21 @@
   /*text-align: center;*/
 }
 
+::-webkit-input-placeholder {
+  margin-left: 20px;
+}
+
+:-moz-placeholder {
+  margin-left: 20px;
+}
+
 h1 {
   font-weight: bold;
   font-size: 20px;
+}
+
+h2 {
+  font-size: 16px;
 }
 
 table {

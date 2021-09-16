@@ -16,6 +16,12 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "16px",
         marginLeft: "18px",
     },
+    specific: {
+        display: "flex",
+        justifyContent: "flex-start",
+        alignItems: "center",
+        marginTop: "16px",
+    },
     addbutton: {
         textAlign: "center",
         borderRadius: "30px",
@@ -48,7 +54,7 @@ function Accounts() {
             </div>
             <div class="row">
                 <div class="col-sm-3 offset-sm-1">
-                    <h1 className={classes.header}>Credit Cards</h1>
+                    <h1 className={classes.specific}>Credit Cards</h1>
                 </div>
             </div>
 
@@ -63,7 +69,7 @@ function Accounts() {
             <div className = {classes.typo}>
                 <div class= 'row'>
                 <div class="col-sm-3 offset-sm-1">
-                    <h1 className={classes.header}>Debit Cards</h1>
+                    <h1 className={classes.specific}>Debit Cards</h1>
                 </div>
                 </div>
             </div>
