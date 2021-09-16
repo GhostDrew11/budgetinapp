@@ -14,19 +14,6 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "16px",
         marginLeft: "18px",
     },
-    specific: {
-        display: "flex",
-        justifyContent: "flex-start",
-        alignItems: "center",
-        marginTop: "16px",
-        textTransform: "uppercase",
-        fontWeight: "normal",
-        color: "grey"
-    },
-    budgetarea: {
-        marginTop: "45px",
-        marginLeft: "30px"
-    },
     searcharea: {
         display: 'flex',
         flexDirection: 'row',
@@ -64,28 +51,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "7px", 
         marginLeft: "75px",
         marginRight: "50px",
-    },
-
-    upcomingarea: {
-        marginTop: "30px",
-        marginLeft: "30px",
-        marginRight: "30px"
-    },
-    ucards: {
-        marginTop: "20px",
-        display: "flex",
-        flexDirection:"row",
-        justifyContent: "space-between"
-    },
-    incomearea: {
-        marginTop: "30px",
-        marginLeft: "30px"
-    },
-    icard: {
-        marginTop: "20px",
-        display: "flex",
-        justifyContent: "center"
-    }  
+    }
 }));
 
 function Transactions() {

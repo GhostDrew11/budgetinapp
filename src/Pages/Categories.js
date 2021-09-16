@@ -20,8 +20,6 @@ const useStyles = makeStyles((theme) => ({
     buttonarea: {
         display: "flex",
         flexDirection: "row",
-       // alignContent: "space-between",
-        //flexFlow: "column wrap",
         alignItems:"center",
         justifyContent: "center",
     },
@@ -49,40 +47,6 @@ const useStyles = makeStyles((theme) => ({
     thead: {
         marginLeft: "650px",
     }
-//   root: {
-//     width:425,
-//     height:125,
-//     maxWidth: "75%",
-//     maxHeight: "100%",
-//   },
-//   buttons: {
-//     position: 'absolute',
-//     bottom: 20,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     flexDirection: 'row',
-//     display: 'flex',
-//     left: '50%',
-//     flex: 1,
-//     right: '50%',
-//   },
-//   categoryButton: {
-//     flex: 1,
-//     width: 150,
-//     paddingRight: 20
-//   },
-//   budgetButton: {
-//     width: 180,
-//     flex: 1,
-//   },
-//   labels: {
-//     justifyContent: 'flex-end',
-//     display: 'flex',
-//     paddingTop: 40,
-//     paddingRight: 50,
-//     paddingBottom: 20,
-//     position: 'relative'
-//   }
 }));
 
 
@@ -95,7 +59,7 @@ function Categories() {
                 <div class="col d-flex justify-content-center">
                     <BudgetCard/>
                 </div>
-                <div /*class="row mt-5"*/>
+                <div >
                     <table class="row d-flex">
                         <thead>
                             <th >Spent</th>
@@ -123,38 +87,6 @@ function Categories() {
         </div>
     );
 
-    // return (
-    //     <div className='Container'>
-    //     <Typography variant="h4" gutterBottom className ='mt-3'>
-    //         Categories
-    //     </Typography>
-    //     <div class="row mt-4">
-    //         <div class="col d-flex justify-content-center">
-    //         <BudgetCard/>
-    //         </div>
-    //     </div>
-    //     <div className={classes.labels}>
-    //         <div class={classes.labels}>
-    //         <Typography variant="body2" color="textSecondary" component="p">
-    //             Spent
-    //         </Typography>
-    //         </div>
-    //         <div class={classes.labels}>
-    //         <Typography variant="body2" color="textSecondary" component="p">
-    //             Budget 
-    //         </Typography>
-    //         </div>
-    //     </div>
-    //     <div className={classes.buttons}>
-    //         <div className= {classes.categoryButton}>
-    //         <Button>ADD CATEGORY</Button>
-    //         </div>
-    //         <div class= {classes.budgetButton}>
-    //         <Button>REBALANCE BUDGET</Button> 
-    //         </div>
-    //     </div>
-    //     </div>    
-    // );
 }
 
 export default Categories;

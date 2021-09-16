@@ -2,7 +2,7 @@ import React from 'react';
 import {Card, CardContent} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Progressbar from './Progressbar';
+import Progressbar from '../Categories_components/Progressbar';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,12 +16,11 @@ const useStyles = makeStyles((theme) => ({
     },
     labels: {
         display: 'flex',
-        flexDirection: 'column', 
-        justifyContent: 'space-between',      
+        flexDirection: 'column',       
     }
 }));
 
-function BudgetCard() {
+function DueCard() {
 
     const classes = useStyles();
 
@@ -33,7 +32,7 @@ function BudgetCard() {
                         $1,994
                     </div>
                     <div >
-                        Spent so far
+                        left to pay
                     </div>
                 </div>
                 <div>
@@ -41,10 +40,10 @@ function BudgetCard() {
                 </div>
                 <div className={classes.labels}>
                     <div >
-                        $3,360
+                        $0
                     </div>
                     <div >
-                        Total budget
+                        paid so far
                     </div>
                 </div>
             </CardContent>
@@ -52,4 +51,4 @@ function BudgetCard() {
     );
 }
 
-export default BudgetCard;
+export default DueCard;
