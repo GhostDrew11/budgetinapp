@@ -22,6 +22,36 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: "row",
         alignItems:"center",
         justifyContent: "center",
+        marginTop: "30px"
+    },
+    budgetarea: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        marginTop: "55px",
+    },
+    labelarea: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "flex-end",
+        marginTop: "30px",
+        marginRight: "250px"
+    },
+    spentlabel: {
+        display: "flex",
+        marginRight: "75px"
+    },
+    listitem: {
+        display: "flex",
+        marginRight: "500px"
+    },
+    list: {
+        display: "flex",
+        //justifyContent:'space-between',
+        flexDirection: 'row',
+        marginTop: "7px", 
+        marginLeft: "75px",
+        marginRight: "250px",
     },
     addbutton: {
         textAlign: "center",
@@ -55,34 +85,82 @@ function Categories() {
     return (
         <div class="container">
             <h1 className={classes.header}>Categories</h1>
-            <div class="row mt-5">
-                <div class="col d-flex justify-content-center">
-                    <BudgetCard/>
+            <div className={classes.budgetarea}>
+                <BudgetCard/>
+            </div>
+            <div className={classes.labelarea}>
+                <div className={classes.spentlabel}>Spent</div>
+                <div>Budget</div>
+            </div>
+            <div className={classes.list}>
+                <div className={classes.listitem}>
+                    Rent
                 </div>
-                <div >
-                    <table class="row d-flex">
-                        <thead>
-                            <th >Spent</th>
-                            <th>budget</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Rent</td>
-                                <td>$1,984</td>
-                                <td>$2,000</td>
-                            </tr>
-                            <tr>
-                                <td>Rent</td>
-                                <td>$1,984</td>
-                                <td>$2,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div className={classes.spentlabel}>
+                    $1,984
                 </div>
-                <div className={classes.buttonarea}>
+                <div>
+                    $2,000
+                </div>
+            </div>
+            <div className={classes.list}>
+                <div className={classes.listitem}>
+                    Rent
+                </div>
+                <div className={classes.spentlabel}>
+                    $1,984
+                </div>
+                <div>
+                    $2,000
+                </div>
+            </div>
+            <div className={classes.list}>
+                <div className={classes.listitem}>
+                    Rent
+                </div>
+                <div className={classes.spentlabel}>
+                    $1,984
+                </div>
+                <div>
+                    $2,000
+                </div>
+            </div>
+            <div className={classes.list}>
+                <div className={classes.listitem}>
+                    Rent
+                </div>
+                <div className={classes.spentlabel}>
+                    $1,984
+                </div>
+                <div>
+                    $2,000
+                </div>
+            </div>
+            <div className={classes.list}>
+                <div className={classes.listitem}>
+                    Rent
+                </div>
+                <div className={classes.spentlabel}>
+                    $1,984
+                </div>
+                <div>
+                    $2,000
+                </div>
+            </div>
+            <div className={classes.list}>
+                <div className={classes.listitem}>
+                    Rent
+                </div>
+                <div className={classes.spentlabel}>
+                    $1,984
+                </div>
+                <div>
+                    $2,000
+                </div>
+            </div>
+            <div className={classes.buttonarea}>
                     <Button className={classes.addbutton}>ADD CATEGORY</Button>
                     <Button className={classes.budgetbutton}>REBALANCE BUDGET</Button>         
-                </div>
             </div>
         </div>
     );

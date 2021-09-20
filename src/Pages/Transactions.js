@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Typography} from "@material-ui/core";
 import TransactionCard from './Transactions_components/TransactionCard';
 import SearchBar from './Transactions_components/SearchBar';
 

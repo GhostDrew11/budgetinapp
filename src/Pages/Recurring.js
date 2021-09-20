@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Typography} from "@material-ui/core";
 import DueCard from './Recurring_components/DueCard';
 import RecurringCard from './Recurring_components/RecurringCard';
 

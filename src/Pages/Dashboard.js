@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Typography} from "@material-ui/core";
 import UpcomingCard from './Dashboard_components/UpcomingCard';
 import IncomeCard from './Dashboard_components/IncomeCard';
 
